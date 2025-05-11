@@ -1,7 +1,5 @@
 // app/content/[id]/page.tsx
-import fs from 'fs';
-import path from 'path';
-import { YouTubePlayer } from '../../../components/YouTubePlayer';
+import YouTubePlayer from '@/components/YouTubePlayer';
 import Link from 'next/link';
 import Image from 'next/image';
 import content from '@/data/content.json';
@@ -21,11 +19,11 @@ interface WorkDetailPageProps {
 
 
 export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
+
   const { id } = await params;
   const works : Work[] = content.works;
   const work = works.find(w => w.id === id);
   console.log(work);
-
   if (!work) {
     return (
       <main className="bg-white">
@@ -44,16 +42,8 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
       <div className="container mx-auto py-8 max-w-7xl ">
         <div className="mx-auto">
           <div className="aspect-video w-full overflow-hidden mb-8 p-0 m-0">
-            {work.youtubeId ? (
+            {work.youtubeId && (
               <YouTubePlayer videoId={work.youtubeId} />
-            ) : (
-              <Image 
-                src={work.image} 
-                alt={work.title} 
-                className="w-full h-full object-cover"
-                width={1000}
-                height={1000}
-              />
             )}
           </div>
           <div className="space-y-4 px-4 md:px-8">

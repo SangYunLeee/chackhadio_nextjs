@@ -1,7 +1,5 @@
 'use client';
-import dynamic from 'next/dynamic'
-
-const ReactPlayer = dynamic(() => import('react-player'), { ssr: false })
+import ReactPlayer from 'react-player'
 
 const YouTubePlayer = ({ videoId }: { videoId: string }) => {
   return (
@@ -10,8 +8,6 @@ const YouTubePlayer = ({ videoId }: { videoId: string }) => {
       playing={true}
       muted={true}
       controls={true}
-      width="100%"
-      height="100%"
     />
   );
 };
