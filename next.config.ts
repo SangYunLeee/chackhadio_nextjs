@@ -1,9 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'standalone',
+  /* config options here */
   images: {
-    domains: ['i.ytimg.com'],
+    remotePatterns: [new URL('https://img.youtube.com/**')],
   },
 };
 

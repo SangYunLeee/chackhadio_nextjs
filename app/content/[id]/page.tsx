@@ -7,7 +7,6 @@ interface Work {
   id: string;
   title: string;
   type: string;
-  image: string;
   youtubeId?: string;
   description?: string;
 }
@@ -85,7 +84,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
                 >
                   <div className="w-full aspect-video relative">
                     <Image
-                      src={other.image}
+                      src={`https://img.youtube.com/vi/${other.youtubeId}/hqdefault.jpg`}
                       alt={other.title}
                       className="w-full h-full object-cover"
                       width={1000}

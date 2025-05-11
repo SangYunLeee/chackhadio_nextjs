@@ -1,13 +1,11 @@
-import fs from 'fs';
 import Image from 'next/image';
 import Link from 'next/link';
-import path from 'path';
 import contentJson from '@/data/content.json';
 interface Work {
   title: string;
   type: string;
-  image: string;
-  link?: string;
+  youtubeId: string;
+  description: string;
   id: string;
 }
 
@@ -50,30 +48,26 @@ export default function Home() {
             height={1000}
           />
         )}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="text-center text-white">
-            {/* <h1 className="text-4xl md:text-6xl font-extrabold mb-2 tracking-tight drop-shadow-lg">
-              {content.hero.title}
-            </h1>
-            <p className="text-lg md:text-2xl mb-8 drop-shadow-lg">
-              {content.hero.subtitle}
-            </p> */}
-            
-            {/* 워크 타입 목록 추가 */}
-            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-              {content.workType.map((type) => (
-                <Link
-                  key={type}
-                  href={`#${type.toLowerCase()}`}
-                  className="px-4 py-2 text-sm md:text-base font-medium text-white 
-                    border border-white/30 rounded-full 
-                    hover:bg-white/10 transition-all duration-300
-                    hover:scale-105"
-                >
-                  {type}
-                </Link>
-              ))}
-            </div>
+        {/* 비디오/이미지 위의 오버레이 */}
+        <div className="absolute inset-0 bg-black/30" />  {/* 배경 오버레이 추가 */}
+        
+        {/* 워크 타입 목록 */}
+        <div className="absolute bottom-0 w-full px-4 -translate-y-5">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-2 sm:gap-3 md:gap-4 lg:gap-6 max-w-7xl mx-auto">
+            {content.workType.map((type) => (
+              <Link
+                key={type}
+                href={`#${type.toLowerCase()}`}
+                className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm md:text-base font-medium text-white 
+                  border border-white/30 rounded-full 
+                  hover:bg-white/10 transition-all duration-300
+                  hover:scale-105
+                  whitespace-nowrap
+                  text-center"
+              >
+                {type}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
@@ -96,7 +90,7 @@ export default function Home() {
               >
                 <div className="w-full aspect-video relative">
                   <Image
-                    src={work.image}
+                    src={`https://img.youtube.com/vi/${work.youtubeId}/hqdefault.jpg`}
                     alt={work.title}
                     className="w-full h-full object-cover"
                     width={1000}
