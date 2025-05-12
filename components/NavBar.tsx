@@ -8,7 +8,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 bg-white relative" style={{ zIndex: 50 }}>
+    <div className="top-0 bg-white relative" style={{ zIndex: 50 }}>
       <nav className="w-full flex items-center px-6 py-4">
         <div className="container mx-auto max-w-7xl flex items-center relative">
           {/* 좌측: 햄버거 메뉴 */}
