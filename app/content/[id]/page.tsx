@@ -22,7 +22,6 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
   const { id } = await params;
   const works : Work[] = content.works;
   const work = works.find(w => w.id === id);
-  console.log(work);
   if (!work) {
     return (
       <main className="bg-white">

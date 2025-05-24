@@ -67,7 +67,7 @@ export default function Home() {
               >
                 <div className="w-full aspect-video relative">
                   <Image
-                    src={`https://img.youtube.com/vi/${work.youtubeId}/hqdefault.jpg`}
+                    src={`https://img.youtube.com/vi/${work.youtubeId}/maxresdefault.jpg`}
                     alt={work.title}
                     className="w-full h-full object-cover"
                     width={1000}
