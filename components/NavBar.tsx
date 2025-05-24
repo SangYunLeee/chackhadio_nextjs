@@ -3,13 +3,15 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import contentJson from '@/data/content.json';
+import { Content } from '@/type/type';
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
-
+  const content: Content = contentJson;
   return (
     <div className="top-0 bg-white relative" style={{ zIndex: 50 }}>
-      <nav className="w-full flex items-center px-6 py-4">
+      <nav className="w-full flex items-center px-6 py-4 h-16 sm:h-20 md:h-24 lg:h-28">
         <div className="container mx-auto max-w-7xl flex items-center relative">
           {/* 좌측: 햄버거 메뉴 */}
           <div className="md:hidden">
@@ -25,7 +27,7 @@ export default function NavBar() {
           </div>
 
           {/* 데스크탑 메뉴 */}
-          <div className="hidden md:flex gap-8 text-lg font-medium text-gray-700">
+          <div className="hidden md:flex gap-8 text-[0.8em] sm:text-[0.9em] md:text-[1em] lg:text-[1.1em] font-medium text-gray-700">
             <Link href="/about" className="hover:text-blue-600 transition">ABOUT</Link>
           </div>
 
@@ -33,9 +35,9 @@ export default function NavBar() {
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <Link 
               href="/" 
-              className="text-lg md:text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 no-underline"
+              className="text-[1.2em] sm:text-[1.3em] md:text-[1.4em] lg:text-[1.7em] font-bold tracking-tight text-gray-900 no-underline"
             >
-              CHAKHADIO FILM
+              {content.navbar.title}
             </Link>
           </div>
 

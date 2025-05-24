@@ -8,10 +8,11 @@ const YouTubePlayer = ({ videoId }: { videoId: string }) => {
     <ReactPlayer
       url={`https://www.youtube.com/watch?v=${videoId}`}
       playing={true}
-      muted={true}
+      muted={false}
       controls={true}
       width="100%"
       height="100%"
+      volume={0.1}
     />
   );
 };

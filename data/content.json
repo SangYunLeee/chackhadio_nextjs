@@ -1,116 +1,139 @@
 {
+  "navbar": {
+    "title": "오늘도차카니 필름"
+  },
   "hero": {
-    "title": "착하디오",
+    "title": "오늘도차카니 필름",
     "subtitle": "영상 제작 전문 스튜디오",
     "image": "/images/hero.jpg",
-    "video": "/videos/sample-hero.mp4"
+    "video": "/videos/main-video.mp4"
   },
   "workType": [
     "SKETCH",
-    "VIRAL",
-    "DOCUMENTARY",
     "INTERVIEW",
-    "MUSIC VIDEO"
+    "PROMOTIONS",
+    "DOCUMENTARY"
   ],
   "works": [
     {
-      "id": "parisbaguette",
-      "title": "파리바게트",
+      "id": "autosalon",
+      "title": "2024오토살롱위크",
       "type": "SKETCH",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "파리바게트의 신제품 출시를 기념하여 제작된 감각적인 스케치 영상입니다. 따뜻한 색감과 부드러운 연출로 브랜드의 이미지를 효과적으로 전달합니다."
+      "youtubeId": "ZLK72-e675s",
+      "description": "2024오토살롱위크 스케치 영상 \n 역동적인 차량 퍼포먼스와 박람회 현장의 에너지를 감각적인 카메라 워크와 리듬감 있는 편집으로 담아낸 현장 스케치 영상. \n 브랜드 부스부터 모터쇼 퍼포먼스까지, 현장을 생생하게 전달하는 몰입형 기록. "
     },
-    {
-      "id": "sk-enmove",
-      "title": "SK엔무브",
+        {
+      "id": "festival",
+      "title": "2024 페스티벌광명",
       "type": "SKETCH",
-      "youtubeId": "IJ0kurZy1DE",
-      "description": "SK엔무브의 친환경 에너지 솔루션을 소개하는 영상으로, 자연과 기술의 조화를 세련된 영상미로 표현하였습니다. 드론 촬영과 타임랩스 기법이 인상적입니다."
+      "youtubeId": "ECpBCUstIMk",
+      "description": "2024페스티벌광명 스케치 영상 \n 도심 속 자연에서 펼쳐진 음악의 축제. \n 음악과 사람, 풍경이 어우러진 생생한 현장의 기록."
     },
-    {
-      "id": "sample-3",
-      "title": "샘플 프로젝트 3",
-      "type": "SKETCH",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 3의 설명입니다. 감각적인 스케치 영상입니다."
+        {
+      "id": "Support Center",
+      "title": "차세대스포츠과학지원센터",
+      "type": "PROMOTIONS",
+      "youtubeId": "xAYcFE29aVM",
+      "description": "차세대 스포츠과학지원센터의 핵심 역량을 담은 \n 심플한 구성과 모션그래픽으로 완성한 홍보영상. \n 실용성과 전문성을 동시에 전달하는 브랜딩 영상입니다."
     },
-    {
-      "id": "sample-9",
-      "title": "샘플 프로젝트 9",
-      "type": "SKETCH",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 9의 설명입니다. 스케치 영상입니다."
-    },
-    {
-      "id": "kt-kdeal-1",
-      "title": "KT K-DEAL",
-      "type": "VIRAL",
-      "youtubeId": "IJ0kurZy1DE",
-      "description": "KT K-DEAL의 새로운 프로모션을 알리기 위한 바이럴 영상입니다. 빠른 템포와 유쾌한 연출로 젊은 세대의 관심을 끌었습니다."
-    },
-    {
-      "id": "kt-kdeal-2",
-      "title": "KT K-DEAL",
-      "type": "VIRAL",
-      "youtubeId": "IJ0kurZy1DE",
-      "description": "KT K-DEAL의 다양한 혜택을 쉽고 재미있게 전달하는 두 번째 바이럴 영상입니다. 애니메이션과 실사 영상의 조화가 돋보입니다."
-    },
-    {
-      "id": "sample-4",
-      "title": "샘플 프로젝트 4",
-      "type": "VIRAL",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 4의 설명입니다. 유쾌한 연출이 특징입니다."
-    },
-    {
-      "id": "sample-10",
-      "title": "샘플 프로젝트 10",
-      "type": "VIRAL",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 10의 설명입니다. 바이럴 영상입니다."
-    },
-    {
-      "id": "sample-1",
-      "title": "샘플 프로젝트 1",
-      "type": "DOCUMENTARY",
-      "youtubeId": "dQw4w9WgXcQ",
-      "description": "이것은 샘플 프로젝트 1의 설명입니다. 다양한 영상미와 연출이 돋보입니다."
-    },
-    {
-      "id": "sample-7",
-      "title": "샘플 프로젝트 7",
-      "type": "DOCUMENTARY",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 7의 설명입니다. 다큐멘터리 형식입니다."
-    },
-    {
-      "id": "sample-2",
-      "title": "샘플 프로젝트 2",
+        {
+      "id": "harley",
+      "title": "할리데이비슨 출고 인터뷰",
       "type": "INTERVIEW",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 2의 설명입니다. 인터뷰 형식으로 제작되었습니다."
+      "youtubeId": "qyKVtxS30xk",
+      "description": "고객의 두근거림을 따라간 할리데이비슨 출고 스토리 \n 브랜드보다 사람의 이야기를 먼저 담아낸 감성 바이크 인터뷰."
     },
     {
-      "id": "sample-8",
-      "title": "샘플 프로젝트 8",
+      "id": "documentary",
+      "title": "한순간을 살더라도",
+      "type": "DOCUMENTARY",
+      "youtubeId": "SfE5Dh_2FzY",
+      "description": "일과 삶의 균형을 찾아가는 사람의 이야기 \n 균형 잡힌 라이프스타일을 보여주는 다큐멘터리형 인터뷰 콘텐츠입니다."
+    },
+        {
+      "id": "Harley-Davidson",
+      "title": "할리데이비슨 출고 인터뷰",
       "type": "INTERVIEW",
-      "youtubeId": "XiJ8PawHB9k",
-      "description": "이것은 샘플 프로젝트 8의 설명입니다. 인터뷰 중심의 영상입니다."
+      "youtubeId": "v7X8DdD2xU4",
+      "description": "웃음과 매력이 넘치는 할리데이비슨 바이크 출고 인터뷰 \n 카페 사장님의 유쾌한 일상과 할리데이비슨 출고기를 인터뷰 형식으로 담은 라이프스타일 콘텐츠."
+    },
+        {
+      "id": "Orchestra",
+      "title": "천왕마을 오케스트라",
+      "type": "SKETCH",
+      "youtubeId": "CrBT5ynWu38",
+      "description": "리허설과 공연 준비 과정을 감성적으로 담은 스케치 영상 \n 따뜻한 컬러와 리듬감 있는 편집으로, 음악과 사람의 순간을 기록했습니다."
+    },
+        {
+      "id": "Jiu-Jitsu",
+      "title": "주짓수가 좋으니까",
+      "type": "PROMOTIONS",
+      "youtubeId": "i3nTPwaBuv0",
+      "description": "스피디한 컷 구성과 사운드 싱크로 주짓수의 박진감과 리듬을 시각화한 스포츠 광고형 콘텐츠 \n 빠른 템포의 컷 편집과 비트 중심 사운드에 맞춰 구성했습니다."
     },
     {
-      "id": "sample-6",
-      "title": "샘플 프로젝트 6",
-      "type": "MUSIC VIDEO",
-      "youtubeId": "dQw4w9WgXcQ",
-      "description": "이것은 샘플 프로젝트 6의 설명입니다. 뮤직비디오 형식입니다."
+      "id": "summer",
+      "title": "2023년 여름이었다",
+      "type": "PROMOTIONS",
+      "youtubeId": "-cSMd3DifRw",
+      "description": "여름을 광고처럼 담아낸 감각적인 기록 \n 여름의 기억을 감각적인 영상으로 담은 POP 스타일 여행 필름 \n POP 스타일의 컬러감, 짧은 호흡의 컷, 그리고 리듬감 있는 전환으로 여행의 설렘을 담았습니다. "
+    },
+        {
+      "id": "NEWS",
+      "title": "해링턴플레이스 뉴스",
+      "type": "PROMOTIONS",
+      "youtubeId": "suKd5PmKn4s",
+      "description": "깔끔한 CG와 텐션 있는 내레이션으로 구성한 뉴스 콘텐츠. \n 해링턴플레이스의 분양 정보와 주변 이슈를 젊은 뉴스 콘텐츠 스타일로 담았습니다"
+    },
+        {
+      "id": "slack",
+      "title": "슬랙 & LG유플러스",
+      "type": "INTERVIEW",
+      "youtubeId": "8KElwExU2kk",
+      "description": "슬랙 도입 후 변화된 기업 커뮤니케이션의 실제 사례 인터뷰 \n 사용자의 실제 경험을 통해 솔루션의 장점과 현장 적용 사례를 직관적으로 전달합니다."
+    },
+        {
+      "id": "metalcompany",
+      "title": "보양메탈 홈페이지 메인",
+      "type": "PROMOTIONS",
+      "youtubeId": "5O8CLIlJPVw",
+      "description": "메탈 가공의 질감, 빛, 디테일을 중심으로 구성된 무드 필름 \n 보양메탈의 기술력과 정밀함을 이미지 컷으로 담아낸 브랜드 인트로 영상입니다."
+    },
+    {
+      "id": "CustomGuide",
+      "title": "할리데이비슨 바이크 커스텀 가이드",
+      "type": "INTERVIEW",
+      "youtubeId": "w1rnn5zyxZ0",
+      "description": "단순한 바이크 소개를 넘어서, 커스텀의 철학까지 담아낸 콘텐츠 \n 바이크에 대한 애정과 디테일한 설명을, 감각적인 영상으로 담았습니다. "
+    },
+        {
+      "id": "practice",
+      "title": "오래된 악습",
+      "type": "DOCUMENTARY",
+      "youtubeId": "WTNNATc_wMM",
+      "description": "최소한의 구성으로 메시지를 전달하는 실험적 영상 \n 톤다운된 색감과 살아있는 생활 소리로 구성된 짧은 다큐 영상."
+    },
+        {
+      "id": "gardenofwater",
+      "title": "남양주 물의정원",
+      "type": "SKETCH",
+      "youtubeId": "Nr56IHcHqzQ",
+      "description": "경기도 남양주 '물의정원'에서 진행된 스케치 영상입니다 \n 전체적으로 톤을 눌러 색감을 진하게 조정했으며, 고요한 분위기를 강조하기 위해 과장 없는 촬영과 절제된 편집으로 구성했습니다."
+    },
+        {
+      "id": "Adprism",
+      "title": "애드프리즘 홈페이지 메인",
+      "type": "PROMOTIONS",
+      "youtubeId": "WiBq5iSUNb0",
+      "description": "드럼과 기타 연주 장면을 중심으로, 사운드의 리듬과 맞물리는 모션그래픽 삽입 \n 음악 제작 환경과 브랜드 아이덴티티를 담은 메인 홈페이지 영상입니다."
     }
   ],
   "about": {
-    "description": "ZAKDANGFILM은 다양한 브랜드와 함께 영상 콘텐츠를 제작해온 크리에이티브 스튜디오입니다.",
+    "description": "감성과 창의성을 담아, 브랜드와 사람의 순간을 기록하는 오늘도차카니 필름입니다.",
     "contact": {
-      "address": "경기도 고양시 덕양구 꽃마을로 68 로데오프라자 507호",
-      "phone": "02-332-8834",
-      "email": "contact@zakdang.co.kr"
+      "address": "서울특별시 광진구 중곡동 189-86 3층",
+      "phone": "010-2248-4385",
+      "email": "sloowz12@naver.com"
     }
   }
 } 

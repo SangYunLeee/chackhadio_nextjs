@@ -37,7 +37,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
   }
 
   return (
-    <main className="bg-white">
+    <main className="bg-black">
       <div className="container mx-auto py-8 max-w-7xl ">
         <div className="mx-auto">
           <div className="aspect-video w-full overflow-hidden mb-8 p-0 m-0">
@@ -51,14 +51,14 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
               {work.type}
             </div>
             {work.description && (
-              <div className="text-base text-gray-700 whitespace-pre-line pt-4">
+              <div className="text-base whitespace-pre-line pt-4">
                 {work.description}
               </div>
             )}
             <div className="pt-4">
               <Link 
                 href="/" 
-                className="inline-flex items-center text-gray-600 hover:text-gray-900"
+                className="inline-flex items-center hover:text-gray-900"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
@@ -70,7 +70,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
         </div>
         <div className="mt-16">
           <h2 className="text-2xl font-bold mb-6 px-4 md:px-8">다른 작품</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-0 sm:gap-3">
             {content.works
               .filter(w => w.id !== work.id)
               .sort(() => Math.random() - 0.5)

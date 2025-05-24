@@ -1,65 +1,40 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import contentJson from '@/data/content.json';
-interface Work {
-  title: string;
-  type: string;
-  youtubeId: string;
-  description: string;
-  id: string;
-}
-
-interface Content {
-  hero: {
-    title: string;
-    subtitle: string;
-    image: string;
-    video?: string;
-  };
-  works: Work[];
-  about: {
-    description: string;
-    contact: {
-      address: string;
-      phone: string;
-      email: string;
-    };
-  };
-  workType: string[];
-}
+import { Content } from '@/type/type';
 
 export default function Home() {
   const content: Content = contentJson;
   return (
     <>
       {/* Hero Section (비디오 or 이미지) */}
-      <section className="w-full flex flex-col items-center justify-center p-0 bg-black text-center relative" style={{minHeight:'40vh'}}>
+      <section className="w-full aspect-[21/9] flex flex-col items-center justify-center p-0 bg-black text-center relative" style={{minHeight:'40vh'}}>
         {/* 비디오가 있으면 비디오, 없으면 이미지 */}
         {content.hero.video ? (
-          <video className="w-full h-[40vh] object-cover" autoPlay loop muted playsInline poster={content.hero.image}>
+          <video className="w-full h-full object-cover" autoPlay loop muted playsInline poster={content.hero.image}>
             <source src={content.hero.video} type="video/mp4" />
           </video>
         ) : (
           <Image
             src={content.hero.image}
             alt="Hero"
-            className="w-full h-[40vh] object-cover"
-            width={1000}
-            height={1000}
+            className="w-full aspect-[21/9] object-cover"
+            width={2100}
+            height={900}
           />
         )}
         {/* 비디오/이미지 위의 오버레이 */}
         <div className="absolute inset-0 bg-black/30" />  {/* 배경 오버레이 추가 */}
         
         {/* 워크 타입 목록 */}
-        <div className="absolute bottom-0 w-full px-4 -translate-y-5">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 2xl:grid-cols-7 gap-2 sm:gap-3 md:gap-4 lg:gap-6 max-w-7xl mx-auto">
+        {/* <div className="absolute bottom-0 w-full px-4 -translate-y-5">
+          <div className="flex flex-wrap justify-center gap-2 sm:gap-3 md:gap-4 lg:gap-6 max-w-7xl mx-auto">
             {content.workType.map((type) => (
               <Link
                 key={type}
                 href={`#${type.toLowerCase()}`}
                 className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm md:text-base font-medium text-white 
-                  border border-white/30 rounded-full 
+                  border border-white rounded-full 
                   hover:bg-white/10 transition-all duration-300
                   hover:scale-105
                   whitespace-nowrap
@@ -69,11 +44,13 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </div>
+        </div> */}
       </section>
+      
       {/* 프로젝트 리스트 (works) */}
-      <section className="w-full bg-white">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0">
+      <section className="w-full">
+        {/* <div className="text-2xl font-bold mb-6 px-4 md:px-8">작품 리스트</div> */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-0 sm:gap-3 sm:mt-3">
           {content.works.map((work, idx) => {
             // 현재 작품이 해당 타입의 첫 번째 작품인지 확인
             const isFirstOfType = content.works
@@ -84,7 +61,7 @@ export default function Home() {
               <Link
                 key={idx}
                 href={`/content/${work.id}`}
-                className="w-full p-0 m-0 relative block group"
+                className="w-full p-0 m-0 relative block group rounded-sm overflow-hidden"
                 style={{minWidth:'250px', maxWidth:'100vw'}}
                 id={isFirstOfType ? work.type.toLowerCase() : undefined}  // 첫 번째 작품에만 id 추가
               >

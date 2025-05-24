@@ -8,8 +8,8 @@ interface FooterData {
 export default async function Footer() {
   const _footerData: FooterData = footerData;
   return (
-    <footer className="w-full bg-gray-100 border-t border-gray-200 py-8 mt-16">
-      <div className="max-w-2xl mx-auto px-4 text-center text-gray-700 text-sm space-y-2">
+    <footer className="w-full bg-gray-900 border-t border-gray-800 py-8 mt-16 text-white">
+      <div className="max-w-2xl mx-auto px-4 text-center text-gray-400 text-sm space-y-2">
         <div>{_footerData.address}</div>
         <div>전화: {_footerData.phone}</div>
         <div>
