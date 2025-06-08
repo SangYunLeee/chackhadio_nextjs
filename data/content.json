@@ -6,7 +6,7 @@
     "title": "오늘도차카니 필름",
     "subtitle": "영상 제작 전문 스튜디오",
     "image": "/images/hero.jpg",
-    "video": "/videos/main-video.mp4"
+    "video": "https://memoapi.entto.shop/posts/283/files/file/250608043757__user__1__post__283___%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB_1.mp4"
   },
   "workType": [
     "SKETCH",
@@ -76,7 +76,8 @@
       "title": "2023년 여름이었다",
       "type": "PROMOTIONS",
       "youtubeId": "-cSMd3DifRw",
-      "description": "여름을 광고처럼 담아낸 감각적인 기록 \n 여름의 기억을 감각적인 영상으로 담은 POP 스타일 여행 필름 \n POP 스타일의 컬러감, 짧은 호흡의 컷, 그리고 리듬감 있는 전환으로 여행의 설렘을 담았습니다. "
+      "description": "여름을 광고처럼 담아낸 감각적인 기록 \n 여름의 기억을 감각적인 영상으로 담은 POP 스타일 여행 필름 \n POP 스타일의 컬러감, 짧은 호흡의 컷, 그리고 리듬감 있는 전환으로 여행의 설렘을 담았습니다. ",
+      "image": "/images/summer.png"
     },
         {
       "id": "NEWS",

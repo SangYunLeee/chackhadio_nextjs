@@ -3,12 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import contentJson from '@/data/content.json';
-import { Content } from '@/type/type';
 
 export default function NavBar() {
   const [open, setOpen] = useState(false);
-  const content: Content = contentJson;
   return (
     <div className="top-0 bg-white relative" style={{ zIndex: 50 }}>
       <nav className="w-full flex items-center px-6 py-4 h-16 sm:h-20 md:h-24 lg:h-28">
@@ -35,15 +32,22 @@ export default function NavBar() {
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             <Link 
               href="/" 
-              className="text-[1.2em] sm:text-[1.3em] md:text-[1.4em] lg:text-[1.7em] font-bold tracking-tight text-gray-900 no-underline"
+              className="text-[1.2em] sm:text-[1.4em] md:text-[1.5em] lg:text-[1.7em] font-bold tracking-tight text-gray-900 no-underline"
             >
-              {content.navbar.title}
+              <Image
+                src="/images/main_logo.png"
+                alt="Logo"
+                width={125}
+                height={60}
+                className="h-[40px] sm:h-[50px] md:h-[50px] lg:h-[55px] w-auto"
+                priority
+              />
             </Link>
           </div>
 
           {/* 우측: 소셜 미디어 아이콘 */}
           <div className="flex-1 hidden md:flex justify-end items-center gap-4">
-            <a href="https://www.youtube.com/channel/UChU8xpMdRp6fvBtlskWh72Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <a href="https://www.youtube.com/@nicetoday_" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <Image src="/images/youtubeicon.svg" alt="YouTube" className="w-6 h-6" width={1000} height={1000} />
             </a>
           </div>

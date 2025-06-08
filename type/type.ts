@@ -4,6 +4,7 @@ export interface Work {
   youtubeId: string;
   description: string;
   id: string;
+  image?: string;
 }
 
 export interface Content {
