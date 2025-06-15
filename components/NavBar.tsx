@@ -24,8 +24,10 @@ export default function NavBar() {
           </div>
 
           {/* 데스크탑 메뉴 */}
-          <div className="hidden md:flex gap-8 text-[0.8em] sm:text-[0.9em] md:text-[1em] lg:text-[1.1em] font-medium text-gray-700">
-            <Link href="/about" className="hover:text-blue-600 transition">ABOUT</Link>
+          <div className="font-bold hidden md:flex gap-8 text-[0.8em] sm:text-[0.9em] md:text-[1em] lg:text-[1.1em] font-medium text-gray-700">
+            <Link href="/about" className="hover:text-blue-600 transition">
+              <p className="text-lg font-bold text-gray-700 hover:text-blue-600">ABOUT</p>
+            </Link>
           </div>
 
           {/* 중앙: 로고 */}
@@ -60,14 +62,14 @@ export default function NavBar() {
           <div className="w-full px-6 py-2">
             <Link 
               href="/about" 
-              className="block w-full py-3 text-lg font-medium text-gray-700 hover:text-blue-600"
+              className="block w-full py-3 text-lg text-gray-700 hover:text-blue-600 font-bold"
               onClick={() => setOpen(false)}
             >
-              ABOUT
+              <p className="text-lg font-bold text-gray-700 hover:text-blue-600">ABOUT</p>
             </Link>
           </div>
         </div>
       )}
     </div>
   );
-} 
+}

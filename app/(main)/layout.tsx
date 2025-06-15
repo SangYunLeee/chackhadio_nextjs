@@ -1,6 +1,6 @@
-import './globals.css';
-import NavBar from '../components/NavBar';
-import Footer from '../components/Footer';
+import '@/app/globals.css';
+import NavBar from '../../components/NavBar';
+import Footer from '../../components/Footer';
 
 export const metadata = {
   title: 'ZAKDANG FILM',
@@ -10,11 +10,11 @@ export const metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ko">
-      <body className="bg-black text-gray-900">
+      <body className="bg-white text-gray-900 min-h-screen flex flex-col">
         <NavBar />
-        <main className="min-h-screen">
+        <div className="flex-grow">
           {children}
-        </main>
+        </div>
         <Footer />
       </body>
     </html>

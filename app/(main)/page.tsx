@@ -6,9 +6,9 @@ import { Content } from '@/type/type';
 export default function Home() {
   const content: Content = contentJson;
   return (
-    <>
+    <main className="min-h-screen bg-black">
       {/* Hero Section (비디오 or 이미지) */}
-      <section className="w-full aspect-[21/9] flex flex-col items-center justify-center p-0 bg-black text-center relative" style={{minHeight:'40vh'}}>
+      <section className="w-full aspect-[24/9] flex flex-col items-center justify-center p-0 bg-black text-center relative" style={{minHeight:'30vh'}}>
         {/* 비디오가 있으면 비디오, 없으면 이미지 */}
         {content.hero.video ? (
           <video className="w-full h-full object-cover" autoPlay loop muted playsInline poster={content.hero.image}>
@@ -87,6 +87,6 @@ export default function Home() {
         </div>
       </section>
       {/* About/Contact 등은 필요시 추가 */}
-    </>
+    </main>
   );
 }

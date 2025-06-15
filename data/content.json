@@ -127,13 +127,53 @@
       "type": "PROMOTIONS",
       "youtubeId": "WiBq5iSUNb0",
       "description": "드럼과 기타 연주 장면을 중심으로, 사운드의 리듬과 맞물리는 모션그래픽 삽입 \n 음악 제작 환경과 브랜드 아이덴티티를 담은 메인 홈페이지 영상입니다."
+    },
+    {
+      "id": "successstory",
+      "title": "성공스토리",
+      "type": "INTERVIEW",
+      "youtubeId": "keD9pqGj9So",
+      "description": "비지니스 성공스토리 인터뷰 영상 \n 목소리의 여백을 살리고 조명과 색보정을 통해 따뜻한 인상을 유지하며, \n 말보다 눈빛과 손짓이 더 말해주는 순간을 포착하고자 했습니다. "
+    },
+        {
+      "id": "Conference",
+      "title": "SeoulTech 2nd 컨퍼런스",
+      "type": "SKETCH",
+      "youtubeId": "IiO3GGIRoA8",
+      "description": "SeouTech 2nd 컨퍼런스 스케치 영상 \n 역동적인 리듬으로 전시와 네트워킹과 스피치를 담아냈고, \n 기술을 ‘보여주는 방식’에 집중하여 섬유가 지닌 질감과 움직임을 영상 속에 녹여냈습니다"
+    },
+    {
+      "id": "sportshero",
+      "title": "2025스포츠 영웅의 전당",
+      "type": "DOCUMENTARY",
+      "youtubeId": "nsW7RjOx5Ik",
+      "description": "한 시대를 빛낸 올림픽 영웅, 그리고 그를 기억하는 사람들의 목소리. \n 이 영상은 스포츠 영웅의 전당을 기념하며 \n 한 인물이 걸어온 길을, 그의 지인들과 함께 되짚습니다."
+    },
+        {
+      "id": "hospital",
+      "title": "울산대학교병원 50주년 홍보영상",
+      "type": "PROMOTIONS",
+      "youtubeId": "3KHjgiOpUPo",
+      "description": "울산대학교병원 50주년을 기념하는 브랜드 필름 \n 병원의 50년 역사를 시간의 흐름에 따라 구성하고, \n ‘선’이라는 시각적 모티프를 활용해 사람과 기술, 과거와 현재를 유기적으로 연결했습니다.."
     }
   ],
   "about": {
     "description": "감성과 창의성을 담아, 브랜드와 사람의 순간을 기록하는 오늘도차카니 필름입니다.",
+    "address": "경기도 이천시 마장면 중부대로 644번길 161 [이천시 표교리 373] 우편번호 17384",
     "contact": {
-      "address": "서울특별시 광진구 중곡동 189-86 3층",
-      "phone": "010-2248-4385",
+      "phone": [
+        {
+          "name": "박종욱 PD",
+          "phone": "010-2248-4385",
+          "email": "sloowz12@naver.com"
+        },
+        {
+          "name": "오평강 PD",
+          "phone": "010-9737-2541",
+          "email": "sloowz12@naver.com"
+        }
+      ],
+      "license": "736-69-00431",
       "email": "sloowz12@naver.com"
     }
   }

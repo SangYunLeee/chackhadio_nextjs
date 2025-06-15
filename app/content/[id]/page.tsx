@@ -36,7 +36,7 @@ export default async function WorkDetailPage({ params }: WorkDetailPageProps) {
   }
 
   return (
-    <main className="bg-black">
+    <main className="bg-black text-white">
       <div className="container mx-auto py-8 max-w-7xl ">
         <div className="mx-auto">
           <div className="aspect-video w-full overflow-hidden mb-8 p-0 m-0">

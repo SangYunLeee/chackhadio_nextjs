@@ -20,9 +20,14 @@ export interface Content {
   works: Work[];
   about: {
     description: string;
+    address: string;
     contact: {
-      address: string;
-      phone: string;
+      phone: {
+        name: string;
+        phone: string;
+        email: string;
+      }[];
+      license: string;
       email: string;
     };
   };
