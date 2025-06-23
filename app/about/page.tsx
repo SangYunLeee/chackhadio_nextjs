@@ -1,8 +1,6 @@
 import { Content } from "@/type/type";
 import contentJson from "@/data/content.json";
 import Image from "next/image";
-import TypewriterComponentNew from "./Typewriter-new";
-import TypewriterComponent from "./Typewriter";
 export default function AboutPage() {
   const content: Content = contentJson;
   return (
@@ -20,11 +18,10 @@ export default function AboutPage() {
         <div className="text-lg text-gray-700 leading-relaxed grid grid-cols-1 gap-x-24 lg:grid-cols-[auto_1fr]">
           <div className="mt-0 sm:mt-20">
             {/* Main Title */}
-            {/* <div className="text-2xl font-bold mb-10 pb-1 border-b-3 border-gray-200 inline-block">
-              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap mb-3">당신의 이야기를 실현시켜줄</div>
+            <div className="text-2xl font-bold mb-10 pb-1 border-b-3 border-gray-200 inline-block">
+              <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">당신의 이야기를 실현 시켜줄</div>
               <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl whitespace-nowrap">탁월한 영상 파트너가 필요하다면,</div>
-            </div> */}
-            <TypewriterComponentNew />
+            </div>
             {/* Contact Info */}
             <div className="text-[1rem] sm:text-[1.2rem] md:text-[1.2rem] lg:text-[1.3rem]">
               <div>
@@ -54,7 +51,7 @@ export default function AboutPage() {
           </div>
           {/* Image */}
           <div className="flex items-center justify-center my-5">
-            <Image src="/images/body_logo.png" alt="logo" width={300} height={300} className="my-auto opacity-20 w-[150px] sm:w-[300px]"/>          
+            <Image src="/images/body_logo.png" alt="logo" width={300} height={300} className="my-auto opacity-30 w-[150px] sm:w-[300px]"/>          
           </div>
         </div>
 
