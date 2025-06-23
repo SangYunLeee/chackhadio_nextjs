@@ -3,7 +3,7 @@ import NavBar from '../../components/NavBar';
 import Footer from '../../components/Footer';
 
 export const metadata = {
-  title: 'ZAKDANG FILM',
+  title: '오늘도차카니 필름',
   description: '영상 제작 전문 스튜디오',
 };
 
