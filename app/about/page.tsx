@@ -27,7 +27,22 @@ export default function AboutPage() {
             </video>
           </div>
           
-          <div className="mt-3 sm:mt-20 block sm:hidden flex flex-col items-center">
+          
+
+          {/* Image */}
+          <div className="flex items-center justify-center my-5 mt-5 sm:mt-20 hidden sm:block">
+            <video
+              autoPlay
+              muted
+              playsInline
+              className="max-h-[10rem] md:max-h-[20rem] flex items-center justify-center my-5"
+            >
+              <source src="/videos/logo_1.webm" type="video/webm" />
+            </video>
+          </div>
+
+
+          <div className="mt-13 sm:mt-20 block sm:hidden flex flex-col items-center">
             {/* Main Title */}
             <div className="text-2xl font-bold mb-5 pb-1 inline-block">
               <div className="whitespace-nowrap">당신의 이야기를 실현 시켜줄</div>
@@ -62,19 +77,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Image */}
-          <div className="flex items-center justify-center my-5 mt-5 sm:mt-20 hidden sm:block">
-            <video
-              autoPlay
-              muted
-              playsInline
-              className="max-h-[10rem] md:max-h-[20rem] flex items-center justify-center my-5"
-            >
-              <source src="/videos/logo_1.webm" type="video/webm" />
-            </video>
-          </div>
-
-          <div className="flex items-center justify-center my-15 block sm:hidden">
+          <div className="flex items-center justify-center my-10 block sm:hidden">
             <Image priority src="/images/body_logo.png" alt="logo" width={300} height={300} className="my-auto opacity-30 w-[150px] sm:w-[300px]"/>          
           </div>
         </div>
