@@ -26,8 +26,7 @@ export default function AboutPage() {
               <source src="/videos/text_1.webm" type="video/webm" />
             </video>
           </div>
-          
-          
+
 
           {/* Image */}
           <div className="flex items-center justify-center my-5 mt-5 sm:mt-20 hidden sm:block">

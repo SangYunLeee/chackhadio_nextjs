@@ -20,7 +20,7 @@ export interface Content {
   works: Work[];
   about: {
     description: string;
-    address: string;
+    address: string[];
     contact: {
       phone: {
         name: string;
