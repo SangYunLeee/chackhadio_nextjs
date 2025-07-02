@@ -15,6 +15,7 @@ export interface Content {
     title: string;
     subtitle: string;
     video?: string;
+    image?: string;
   };
   works: Work[];
   about: {

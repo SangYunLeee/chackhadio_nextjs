@@ -5,7 +5,8 @@
   "hero": {
     "title": "오늘도차카니 필름",
     "subtitle": "영상 제작 전문 스튜디오",
-    "video": "https://api.memou.shop/posts/283/files/file/250608043757__user__1__post__283___%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB_1.mp4"
+    "video": "https://api.memou.shop/posts/283/files/file/250608043757__user__1__post__283___%E1%84%86%E1%85%A6%E1%84%8B%E1%85%B5%E1%86%AB_1.mp4",
+    "image": "/images/hero.jpg"
   },
   "workType": [
     "SKETCH",
