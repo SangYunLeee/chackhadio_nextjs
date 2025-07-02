@@ -14,7 +14,6 @@ export interface Content {
   hero: {
     title: string;
     subtitle: string;
-    image: string;
     video?: string;
   };
   works: Work[];

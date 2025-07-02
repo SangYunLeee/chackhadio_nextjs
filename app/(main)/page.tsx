@@ -11,17 +11,11 @@ export default function Home() {
       <section className="w-full aspect-[24/9] flex flex-col items-center justify-center p-0 bg-black text-center relative" style={{minHeight:'30vh'}}>
         {/* 비디오가 있으면 비디오, 없으면 이미지 */}
         {content.hero.video ? (
-          <video className="w-full h-full object-cover" autoPlay loop muted playsInline poster={content.hero.image}>
+          <video className="w-full h-full object-cover" autoPlay loop muted playsInline>
             <source src={content.hero.video} type="video/mp4" />
           </video>
         ) : (
-          <Image
-            src={content.hero.image}
-            alt="Hero"
-            className="w-full aspect-[21/9] object-cover"
-            width={2100}
-            height={900}
-          />
+          <></>
         )}
         {/* 비디오/이미지 위의 오버레이 */}
         <div className="absolute inset-0 bg-black/30" />  {/* 배경 오버레이 추가 */}
