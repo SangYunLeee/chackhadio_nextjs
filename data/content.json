@@ -16,6 +16,41 @@
   ],
   "works": [
     {
+      "id": "SeoulOlympics",
+      "title": "서울올림픽 37주년 기념식",
+      "type": "INTERVIEW",
+      "youtubeId": "IkppNmLDVdE",
+      "description": "서울올림픽 37주년 기념식 영상 \n 서울올림픽의 유산, 미래를 잇다 \n 국민체육진흥공단이 만들어온 길을 인터뷰와 모션그래픽 영상으로 담았습니다. "
+    },
+        {
+      "id": "Behind",
+      "title": "데미플로 광고현장 메이킹필름",
+      "type": "making film",
+      "youtubeId": "9-3QIKkaxAI",
+      "description": "촬영 현장의 리얼한 긴장과 열정 \n 그 모든 과정을 메이킹 필름에 담았습니다"
+    },
+        {
+      "id": "Rhythm",
+      "title": "연천 청소년 댄스경연대회",
+      "type": "SKETCH",
+      "youtubeId": "fl7I6mxnAUE",
+      "description": "청소년 댄스 경연 현장을 기록했습니다 \n 무대 위 역동적인 퍼포먼스와, \n 관객과 현장의 열기를 함께 전했습니다"
+    },
+       {
+      "id": "Teaser",
+      "title": "2025 페스티벌 광명 티저",
+      "type": "promotion",
+      "youtubeId": "Eev2oYwJKmI",
+      "description": "2025 페스티벌 광명을 알리는 티저 영상입니다 \n 축제의 분위기와 현장감을 담았습니다 \n 관객들의 기대감을 끌어올리는 데 중점을 두었습니다"
+    },  
+           {
+      "id": "Mind",
+      "title": "2025 청소년 마음건강페스타",
+      "type": "SKETCH",
+      "youtubeId": "boZtOa8xBHM",
+      "description": "청소년 마음건강 페스타 현장을 기록했습니다 \n 참여형 프로그램과 공연 중심으로 담고, \n 청소년들의 활기찬 축제 분위기를 중점으로 구성했습니다"
+    },  
+    {
       "id": "autosalon",
       "title": "2024오토살롱위크",
       "type": "SKETCH",
