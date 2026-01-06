@@ -16,6 +16,13 @@
   ],
   "works": [
     {
+      "id": "promo",
+      "title": "사당청소년센터 소개영상",
+      "type": "promotion",
+      "youtubeId": "UkapDkfxN4k",
+      "description": "실제 공간의 분위기와 흐름을 중심으로 구성함으로써 \n 센터가 잘 드러날 수 있는 장면들로 영상을 나열하여 \n 청소년의 일상이 머무르고 성장이 이루어지는 장소로 담아내는 데 목적을 두었습니다. "
+    },
+    {
       "id": "festival2025",
       "title": "2025 페스티벌 광명",
       "type": "Sketch",
