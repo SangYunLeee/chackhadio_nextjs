@@ -52,6 +52,9 @@ export default function NavBar() {
             <a href="https://www.youtube.com/@nicetoday_" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <Image src="/images/youtubeicon.svg" alt="YouTube" className="w-6 h-6" width={1000} height={1000} />
             </a>
+            <a href="https://www.instagram.com/chakani_film/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+              <Image src="/images/Instagram_icon.png" alt="Instagram" className="w-6 h-6" width={1000} height={1000} />
+            </a>
           </div>
         </div>
       </nav>
