@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function AboutPage() {
   const content: Content = contentJson;
   return (
-    <main className="bg-white flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 sm:my-auto pb-[30vh]">
+    <main className="bg-white flex flex-col items-center px-4 sm:px-6 md:px-8 lg:px-12 xl:px-0 w-full sm:my-auto pb-[30vh]">
       {/* <div className="relative w-full h-90 overflow-hidden flex items-center justify-center">
         <Image 
           src="/images/work_1.png" 
@@ -15,7 +15,7 @@ export default function AboutPage() {
         />
         <h2 className="absolute text-3xl font-bold mb-2">당신의 이야기를 실현 시켜줄 탁월한 영상 파트너가 필요하다면,</h2>
       </div> */}
-        <div className="text-lg text-gray-700 leading-relaxed grid grid-cols-1 gap-x-2 lg:grid-cols-[auto_1fr]">
+        <div className="lg:hidden text-lg text-gray-700 leading-relaxed grid grid-cols-1 gap-x-2">
           <div className="mt-0 sm:mt-20 hidden sm:block">
             <video
               autoPlay
@@ -77,10 +77,21 @@ export default function AboutPage() {
           </div>
 
           <div className="flex items-center justify-center my-10 block sm:hidden">
-            <Image priority src="/images/body_logo.png" alt="logo" width={300} height={300} className="my-auto opacity-30 w-[150px] sm:w-[300px]"/>          
+            <Image priority src="/images/body_logo.png" alt="logo" width={300} height={300} className="my-auto opacity-30 w-[150px] sm:w-[300px]"/>
           </div>
-        </div>
 
+
+        </div>
+          {/* Description Images - Desktop only */}
+          <div className="hidden lg:block mb-10 w-full mx-auto">
+            <div className="flex flex-col gap-6 w-full">
+              <Image src="/images/description/1.jpg" alt="description 1" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
+              <Image src="/images/description/2.jpg" alt="description 2" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
+              <Image src="/images/description/3.jpg" alt="description 3" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
+              <Image src="/images/description/4.jpg" alt="description 4" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
+              <Image src="/images/description/5.jpg" alt="description 5" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
+            </div>
+          </div>
     </main>
   );
 } 
