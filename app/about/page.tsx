@@ -80,11 +80,10 @@ export default function AboutPage() {
             <Image priority src="/images/body_logo.png" alt="logo" width={300} height={300} className="my-auto opacity-30 w-[150px] sm:w-[300px]"/>
           </div>
 
-
         </div>
           {/* Description Images - Desktop only */}
           <div className="hidden lg:block mb-10 w-full mx-auto">
-            <div className="flex flex-col gap-6 w-full">
+            <div className="flex flex-col gap-6   max-w-[1600px] mx-auto">
               <Image src="/images/description/1.jpg" alt="description 1" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
               <Image src="/images/description/2.jpg" alt="description 2" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
               <Image src="/images/description/3.jpg" alt="description 3" width={1200} height={800} className="w-full h-auto" sizes="(min-width: 1024px) 1280px, 100vw" />
