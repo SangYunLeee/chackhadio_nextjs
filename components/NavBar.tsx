@@ -49,7 +49,7 @@ export default function NavBar() {
 
           {/* 우측: 소셜 미디어 아이콘 */}
           <div className="flex-1 hidden md:flex justify-end items-center gap-4">
-            <a href="https://www.youtube.com/@nicetoday_" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <a href="https://www.youtube.com/channel/UChU8xpMdRp6fvBtlskWh72Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
               <Image src="/images/youtubeicon.svg" alt="YouTube" className="w-6 h-6" width={1000} height={1000} />
             </a>
             <a href="https://www.instagram.com/chakani_film/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
